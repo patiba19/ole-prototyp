@@ -1,0 +1,1 @@
+module.exports = { content: ['./index.html', './src/**/*.{ts,tsx}'], theme: { extend: { colors: { brand: { green:'#91C32D', turquoise:'#42B9D0', blue:'#0064A6', navy:'#0D3350', surface:'#F5F8FA' } }, boxShadow: {soft:'0 8px 28px rgba(14,54,80,.07)'}, fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']} } }, plugins: [] };
