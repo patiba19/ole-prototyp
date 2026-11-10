@@ -12,6 +12,87 @@ export const initialData=():AppData=>{
  {id:'data',code:'DAT-204',title:'Data Analytics & Visualization',semester:'WS 2026/27',teacher:'Prof. Markus Leitner',field:'Wirtschaft & Informatik',syllabus:'Lernziele: Datenbereinigung, explorative Datenanalyse, statistische Grundlagen, Python, Datenvisualisierung und kritische Interpretation. Methoden: Live Coding, Fallstudien und Laborübungen. Beurteilung: Datenprojekt und schriftliche Reflexion.',start:delta(-7),end:delta(24),published:true,released:false,locked:false,draft:[],questions:[q('da1','rating','Wie gut haben die Live-Coding-Einheiten das Verständnis von Python gefördert?','Methoden'),q('da2','rating','Wie praxisnah waren die Fallstudien zur Datenbereinigung?','Praxisbezug'),q('da3','rating','Wie klar wurden statistische Konzepte erklärt?','Lernziele'),q('da4','rating','Wie hilfreich war das Feedback zum Datenprojekt?','Feedback'),q('da5','text','Welche Inhalte zur Datenvisualisierung sollten vertieft werden?','Verbesserung')]},
  {id:'pm',code:'PM-110',title:'Agiles Projektmanagement',semester:'WS 2026/27',teacher:'Dr. Lena Hofer',field:'Management',syllabus:'Lernziele: Scrum, Kanban, Sprintplanung, Stakeholderkommunikation, Risikomanagement. Lehrform: Gruppenarbeiten, Retrospektiven und Simulationen. Prüfung: Projektbericht.',start:delta(5),end:delta(34),published:false,released:false,locked:false,draft:[],questions:[q('pm1','rating','Wie hilfreich waren die Scrum-Simulationen für Ihr Verständnis agiler Methoden?','Praxisbezug'),q('pm2','text','Was würden Sie an der Sprintplanung verbessern?','Verbesserung')]}
  ];
+ 
+courses.push({
+  id: 'requirements-engineering',
+  code: 'RE-101',
+  title: 'Requirements Engineering',
+  semester: 'WS 2026/27',
+  teacher: 'Dr. Lena Hofer',
+  field: 'Informatik & Management',
+
+  syllabus: `
+Lernziel:
+Erlernen von Kenntnissen und Anwenderkompetenz
+im Requirements Engineering (RE).
+
+Lehrveranstaltungsinhalte:
+- Rolle des Requirements Engineering in der
+  Produkt- und Prozessentwicklung verstehen
+- Grundbegriffe des Requirements Engineering kennen
+- Phasen des Requirements Engineering verstehen
+- Ermittlungstechniken für Anforderungen kennen
+- Einsatz von KI im Requirements Engineering
+- Natürlichsprachliche und modellbasierte
+  Dokumentation von Anforderungen durchführen
+- Methoden zur Prüfung und Bewertung
+  von Anforderungen anwenden
+  `,
+
+  start: delta(-7),
+  end: delta(21),
+
+  published: true,
+  released: false,
+  locked: false,
+  draft: [],
+
+  questions: [
+    q(
+      're1',
+      'rating',
+      'Wie verständlich wurde die Rolle des Requirements Engineering in der Produkt- und Prozessentwicklung vermittelt?',
+      'Grundlagen'
+    ),
+    q(
+      're2',
+      'rating',
+      'Wie gut konnten Sie die verschiedenen Phasen des Requirements Engineering nachvollziehen?',
+      'Lernziele'
+    ),
+    q(
+      're3',
+      'rating',
+      'Wie hilfreich waren die vermittelten Techniken zur Ermittlung von Anforderungen?',
+      'Anforderungsermittlung'
+    ),
+    q(
+      're4',
+      'rating',
+      'Wie praxisnah wurde der Einsatz von KI im Requirements Engineering behandelt?',
+      'KI-Einsatz'
+    ),
+    q(
+      're5',
+      'rating',
+      'Wie gut wurden die natürlichsprachliche und modellbasierte Dokumentation von Anforderungen vermittelt?',
+      'Dokumentation'
+    ),
+    q(
+      're6',
+      'rating',
+      'Wie gut wurden Sie darauf vorbereitet, Anforderungen systematisch zu prüfen und zu bewerten?',
+      'Anforderungsqualität'
+    ),
+    q(
+      're7',
+      'text',
+      'Welche Inhalte oder praktischen Übungen im Requirements Engineering sollten verbessert oder vertieft werden?',
+      'Verbesserung'
+    )
+  ]
+});
+
  const submissions:Submission[]=[];
  const samples=[
   [5,4,5,4,'Die gemeinsamen Usability-Tests waren besonders hilfreich.'],[4,4,4,5,'Mehr Zeit für die abschließende Präsentation.'],[5,5,4,5,'Sehr gute Verbindung von Theorie und Praxis.'],[3,4,3,4,'Zusätzliche Beispiele zur Barrierefreiheit wären sinnvoll.'],[4,5,4,4,'Die Feedbackrunden waren sehr wertvoll.'],[5,5,5,5,'Alles gut.'],[2,3,3,3,'Mehr individuelle Betreuung während der Workshops.'],[4,4,5,4,'Die Methoden waren anschaulich erklärt.'],[1,1,1,1,'ok'],[5,4,4,5,'Mehr Zeit für User Research.'],[4,5,5,4,'Gute Übungen!'],[3,4,4,3,'Mehr Beispiele aus Unternehmen.']
